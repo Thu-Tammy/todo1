@@ -11,3 +11,7 @@ block content
         .col-3
           input(type='submit' class='btn btn-primary' value='Add Item')
       ul(id='todo-list' class='list-unstyled')
+      each item in items
+          li= item.description
+      else
+          li No todo items

@@ -3,7 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Todo' });
+  const items = [
+    { id: 1, description: 'Go to Store'},
+    { id: 2, description: 'Go to School'},
+    { id: 3, description: 'Wash hair'},
+    { id: 4, description: 'Brush teeth'},
+    { id: 5, description: 'Finish Project'},
+  ];
+
+  res.render('index', { title: 'Todo', items: items });
 });
 
 router.post('/', function(req, res, next) {
