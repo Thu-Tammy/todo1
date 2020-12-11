@@ -6,6 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Todo' });
 });
 
+router.post('/', function(req, res, next) {
+  console.log(req);
+  res.redirect('/');
+});
+
 router.get('/about', function(req, res, next) {
   res.render('index/about', { title: 'Todo about' });
 });
