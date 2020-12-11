@@ -9,6 +9,8 @@ router.get('/', function(req, res, next) {
     { id: 3, description: 'Wash hair'},
     { id: 4, description: 'Brush teeth'},
     { id: 5, description: 'Finish Project'},
+    { id: 6, description: 'Start Project'},
+    { id: 7, description: 'Present Project'},
   ];
 
   res.render('index', { title: 'Todo', items: items });
